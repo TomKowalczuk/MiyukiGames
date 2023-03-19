@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+:root {
+    --primary-background: hsl(0,0%,0%);
+    --secondary-background: hsl(0,0%,10%);
+    --tertiary-background: hsl(0,0%,20%);
+    --quaternary-background: hsl(0,0%,30%);
+    --primary-text: hsl(0,0%,100%);
+  }
+
+body
+{
+    font-family: 'Quicksand';
+    font-size: 14px;
+    margin: 0px;
+    background-color: var(--primary-background);
+}
+
+
+nav 
+{
+    padding: 10px 20px 10px 20px;
+    overflow: hidden;
+    height: 46px;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav div a 
+{
+    float: left;
+    color: var(--primary-text);
+    text-align: center;
+    text-decoration: none;
+    margin: auto 20px auto 20px;
+}
+nav div a img
+{
+    height: 14px;
+}
+
+
+nav div
+{
+display: flex;
+}
+
+nav div:hover 
+{
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+}
+.page 
+{
+    background-color: var(--secondary-background);
+    height: calc(100vh - 146px);
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+h1
+{
+    padding:0px;
+    color: var(--primary-text);
+}
+
+::-webkit-scrollbar 
+{
+    width: 40px;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: rgba(0, 0, 0, 0); 
+}
+
+::-webkit-scrollbar-thumb 
+{
+    border: 15px rgba(0, 0, 0, 0) solid;
+    background-color: var(--quaternary-background);
+    background-clip: padding-box;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background-color: var(--tertiary-background); 
+}
+
+.About
+{
+    display: flex;
+}
+.About img
+{
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media (prefers-color-scheme: light) 
+{
+    :root {
+        --primary-background: hsl(0,0%,100%);
+        --secondary-background: hsl(0,0%,90%);
+        --tertiary-background: hsl(0,0%,70%);
+        --quaternary-background: hsl(0, 0%,80%);
+        --primary-text: hsl(0,0%,0%);
+      }
+}
