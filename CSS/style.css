@@ -62,7 +62,12 @@ nav div:hover
 
 h1
 {
-    padding:0px;
+    padding:0px 30px 0px 30px;
+    color: var(--primary-text);
+}
+h2
+{
+    padding:0px 30px 0px 30px;
     color: var(--primary-text);
 }
 
@@ -89,9 +94,10 @@ h1
     background-color: var(--tertiary-background); 
 }
 
-.About
+.AboutLeft
 {
     display: flex;
+
 }
 .About img
 {
